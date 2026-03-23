@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Sizing Unit</title>
+    <style>
+      html {
+        font-size: 12px;
+      }
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .box {
+        border: 2px solid black;
+        /* width: 233px; */
+        width: 80vw;
+        height: 10vh;
+        margin: auto;
+        background-color: aquamarine;
+      }
+      .container {
+        border: 2px solid black;
+        /* width: 233px; */
+        width: 80vw;
+        /* height: 80vh; */
+        min-height: 80vh;
+        margin: 23px auto;
+        font-size: 16px;
+        background-color: aquamarine;
+      }
+      .container > div {
+        font-size: 2em;
+        width: 50%;
+        border: 2px solid red;
+      }
+      .container > div > div {
+       width: 50%;
+        border: 2px solid blue;
+      }
+      .mycont {
+        box-sizing: border-box;
+        margin: 23px auto;
+        border: 2px solid black;
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        /* width: 100vmin; */
+        width: 80vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">This is box</div>
+  </body>
+  <div class="container">
+    <div>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione ex
+      voluptatibus laudantium eos vel? Perferendis, distinctio ratione animi
+      eaque culpa asperiores deserunt deleniti, totam numquam quasi dicta
+      similique repudiandae quae sit quo sed laboriosam accusantium. Ab dolorem
+      vel alias repellat corrupti quae nesciunt pariatur, excepturi omnis
+      asperiores iste voluptatem fuga molestiae quis optio porro fugiat atque.
+
+      <div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit sunt ab, adipisci facilis laudantium libero autem nihil porro error. Blanditiis eveniet sint nesciunt. Minus in recusandae, officiis dolore assumenda ipsa excepturi dignissimos? Praesentium, ea?
+      </div>
+  </div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores error atque iure ullam dolor mollitia voluptate fugiat adipisci et dolores, optio nam facere omnis aliquam nemo! Rerum animi minima maiores esse expedita nobis dolor tempora delectus ab eligendi excepturi architecto vitae, deserunt sed error pariatur officiis voluptatum inventore, eveniet optio temporibus. Explicabo, enim sequi. Provident ea nulla quis repellat sint dolor amet praesentium repudiandae animi tempore odio repellendus esse, ratione aliquam saepe ut minus corporis perferendis labore aut, voluptates voluptas optio! Minima eaque magni harum expedita corrupti esse nihil ducimus labore, odio, laudantium eveniet tenetur cumque repellendus sequi eligendi tempora eius! Aspernatur pariatur maiores facilis officia, non consequatur laboriosam esse modi atque dolor deleniti ratione eligendi sequi autem voluptatum harum assumenda possimus? Dolorem doloribus sapiente accusamus voluptatibus possimus temporibus sed, sit at rem deleniti quasi nesciunt quam tenetur tempore. At accusantium ea soluta temporibus atque dolorem nostrum harum, non magni tempore natus debitis eveniet veniam voluptatum eius voluptatibus quaerat sequi hic architecto vitae facere. Eligendi, voluptates exercitationem. Velit enim quae voluptatum minima iusto error illum dolore, rerum ab sint eveniet alias dolor molestias quis possimus tempora distinctio doloremque nam corrupti vitae quibusdam? Pariatur nam eos sed nobis rem laborum, molestias vel optio voluptatum? Expedita, illum quis esse tempore nobis facere cum laborum pariatur quibusdam, ratione ipsa asperiores hic! Architecto minus ratione, cum sapiente, labore quam cumque a culpa delectus, nulla accusantium eius! Culpa.
+  </div>
+  <div class="mycont">I am another container</div>
+</html>
